@@ -1,0 +1,94 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+    	<body>
+    <h1><strong>PERSONAL PROFILE:</strong></h1>
+    <P> ANNA C. JEONG</p>
+    <a href='https://photos.google.com/share/AF1QipP6moaZfxpujf-DmGY32bIIsxSdhIM_vN1Ygb1hOhvyTRUE31pL1wANegkq5IA0MA?key=V25IYlNqTk9ZQ2RDY2hJekRRdzFmZi1kMExRdHlB&source=ctrlq.org'><img src='https://lh3.googleusercontent.com/zOik5lPQnmdhPBB7Ht2OFBYuvyN8bTARkiaAnLgHDpooU9OPD8GOT0aOnyuQEJLxqF8fADoWOY6SHOs90tJO9Vj2RVaiz5qWKHqBr95qU332bpqDtj9ZHv0wB2BZwPNAytypT7Ei5A' alt="smiling girl" width=270px height=280 /></a>
+    <button class="accordion">BIO</button>
+    <div class="panel">
+      <p>I am sixteen years old from Queens, New York.</p>
+    </div>
+
+
+    <button class="accordion">MY LIKES</button>
+    <div class="panel">
+      <p>Playing frisbee & other sports</p>
+      <p>Reading</p>
+      <p>Bonding with my dog</p>
+      <p>Rewatching episodes of Goblin</p>
+      <p>Listening to music</p>
+      <p>Playing guitar and singing to praise songs</p>
+    </div>
+
+    <button class="accordion">MY DISLIKES</button>
+    <div class="panel">
+      <p>Bacon</p>
+      <p>Slugs</p>
+      <p>Homework</p>
+      <p>Foods with coconut in it</p>
+    </div>
+
+
+    <button class="accordion">FUN FACTS</button>
+    <div class="panel">
+      <p>#1)I love eating Korean soy bean noodles.</p>
+      <p>#2)I have double jointed elbows.</p>
+      <p>#3)I am a rising junior.</p>
+    </div>
+
+    <button class="accordion">LINKS TO MY FAVORITE WEBPAGES</button>
+    <div class="panel">
+      <p><a href="https://pupilpath.skedula.com/"/>Pupilpath</a></p>
+      <p><a href="https://www.facebook.com/?stype=lo&jlou=AfeVNtD-dR2JERLpOM4NeocD1NW-4QiOkH0Uf28mTa9JK56Pc4d9J-WxuihTqdmUakk0eyycX2885npzO8KqoaBvvz8brUy-b-bdZKLbyCB89Q&smuh=33080&lh=Ac_ml7qwr_obzP8H"/>Facebook</a></p>
+      <p><a href="http://127.0.0.1:8000/"/>BLOG</a></p>
+    </div>
+
+    <button class="accordion">SIDESCROLLER GAME</button>
+    <div class="panel">
+      <p><iframe allowtransparency="true" width="500" height="500" src="https://scratch.mit.edu/projects/embed/168598726/?autostart=false" frameborder="0" allowfullscreen/></iframe></p>
+      <p>Late for Graduation! In honor of the graduate who missed his special day due to subway delays...Will you be able to make it to yours? Play this game to find out! Accomplices:Tianna&Jessenia</p>
+    </div>
+
+    <button class="accordion">DANCING ROBOT</button>
+    <div class="panel">
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/kus6HzEhqSE" frameborder="0" allowfullscreen/></iframe></p>
+      <p>Be Our Guest! Accomplices: Sydney, Chloe, & Anissa</p>
+    </div>
+
+    <a><img src="https://s-media-cache-ak0.pinimg.com/736x/1c/92/91/1c9291e43fddb7eec34c3d6126de176c--nature-landscape-hd-wallpaper.jpg"  alt="waterfall" width=1200px height=500 /></a>
+
+
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+        }
+
+    }
+}
+  </script>
+
+
+
+
+
+
+</html>
