@@ -1,17 +1,39 @@
 {% load staticfiles %}
 <html>
   <head>
-    <title>BLOG:</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet">
+    <title>AIKO</title>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
   </head>
 
-  <body>
-    <div>
-  <h1><a href="/">Welcome to My Blog!</a></h1>
-   </div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'BIO')">ABOUT ME</button>
+    <button class="tablinks" onclick="openCity(event, 'FAVORITE FOODS')">FAVORITE FOODS</button>
+    <button class="tablinks" onclick="openCity(event, 'POPULAR PLACES TO FIND ME')">POPULAR PLACES TO FIND ME</button>
+  </div>
 
+  <div id="ABOUT ME" class="tabcontent">
+    <h3>ABOUT ME</h3>
+    <p>I am a shorkie, originally from New Jersey.</p>
+    <p>I came to live with my family six years ago</p>
+    <p>I am currently 10 years old.</p>
+  </div>
+
+  <div id="FAVORITE FOODS" class="tabcontent">
+    <h3>FAVORITE FOODS</h3>
+    <p>#1) Sweet Potatoes</p>
+    <p>#2) Anchovies</p>
+    <p>#3) Oranges</p>
+
+  </div>
+
+  <div id="POPULAR PLACES TO FIND ME" class="tabcontent">
+    <h3>POPULAR PLACES TO FIND ME</h3>
+    <p>Underneath the bed</p>
+    <p>Alley Pond Park</p>
+    <p>In the kitchen</p>
+  </div>
 
 
 
@@ -22,3 +44,4 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
+
